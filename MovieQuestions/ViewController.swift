@@ -148,7 +148,7 @@ class ViewController: UIViewController, UITableViewDataSource {
                 } else {
                     weakSelf.didSelectMultiChoice(choiceItem: choiceItem, currentQuestionWithAnswer: currentQuestionWithAnswer)
                 }
-                weakSelf.tableView.reloadData()
+                weakSelf.reloadTableAndButtons()
                 
             }
             
@@ -267,6 +267,10 @@ class ViewController: UIViewController, UITableViewDataSource {
         } else {
             currentQuestionWithAnswerIndex -= 1
         }
+        reloadTableAndButtons()
+    }
+    
+    func reloadTableAndButtons() {
         configureButtons()
         tableView.reloadData()
     }
