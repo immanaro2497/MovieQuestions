@@ -1,0 +1,185 @@
+{
+  "status" : true,
+  "code" : 200,
+  "results" : [
+    {
+      "choice" : null,
+      "assessment" : 133,
+      "id" : 863,
+      "title" : "What do you like to eat duing a movie?",
+      "choices" : [
+        {
+          "id" : 1738,
+          "title" : "Popcorn",
+          "nas_class" : "c1",
+          "question" : 863,
+          "questions" : [
+            {
+              "choice" : 1738,
+              "assessment" : 133,
+              "id" : 864,
+              "title" : "What flavours of popcorn do you like?",
+              "choices" : [
+                {
+                  "id" : 1739,
+                  "title" : "Caramel",
+                  "nas_class" : "c1",
+                  "question" : 864,
+                  "questions" : [
+
+                  ]
+                },
+                {
+                  "id" : 1740,
+                  "title" : "Cheese",
+                  "nas_class" : "c1",
+                  "question" : 864,
+                  "questions" : [
+
+                  ]
+                },
+                {
+                  "id" : 1741,
+                  "title" : "Tomato",
+                  "nas_class" : "c1",
+                  "question" : 864,
+                  "questions" : [
+
+                  ]
+                },
+                {
+                  "id" : 1742,
+                  "title" : "Chilli",
+                  "nas_class" : "c1",
+                  "question" : 864,
+                  "questions" : [
+                    {
+                      "choice" : 1742,
+                      "assessment" : 133,
+                      "id" : 865,
+                      "title" : "How good is your spice tolerance?",
+                      "choices" : [
+
+                      ],
+                      "description" : "",
+                      "type" : "rating",
+                      "creator" : 5
+                    }
+                  ]
+                }
+              ],
+              "description" : "",
+              "type" : "multi_select",
+              "creator" : 5
+            }
+          ]
+        },
+        {
+          "id" : 1743,
+          "title" : "Nachos",
+          "nas_class" : "c1",
+          "question" : 863,
+          "questions" : [
+
+          ]
+        },
+        {
+          "id" : 1744,
+          "title" : "Chips",
+          "nas_class" : "c1",
+          "question" : 863,
+          "questions" : [
+
+          ]
+        }
+      ],
+      "description" : "",
+      "type" : "single_select",
+      "creator" : 5
+    },
+    {
+      "choice" : null,
+      "assessment" : 133,
+      "id" : 866,
+      "title" : "Describe the kind of stories you enjoy watching",
+      "choices" : [
+
+      ],
+      "description" : "",
+      "type" : "free_text",
+      "creator" : 5
+    },
+    {
+      "choice" : null,
+      "assessment" : 133,
+      "id" : 867,
+      "title" : "Sign here to indicate that you consent selling of your data",
+      "choices" : [
+
+      ],
+      "description" : "",
+      "type" : "signature",
+      "creator" : 5
+    },
+    {
+      "choice" : null,
+      "assessment" : 133,
+      "id" : 868,
+      "title" : "Upload a picture of your driving license",
+      "choices" : [
+
+      ],
+      "description" : "",
+      "type" : "file_upload",
+      "creator" : 5
+    },
+    {
+      "choice" : null,
+      "assessment" : 133,
+      "id" : 869,
+      "title" : "Give your opinion",
+      "choices" : [
+        {
+          "id" : 1745,
+          "title" : "Bad",
+          "nas_class" : "c1",
+          "question" : 869,
+          "questions" : [
+
+          ]
+        },
+        {
+          "id" : 1746,
+          "title" : "Poor",
+          "nas_class" : "c1",
+          "question" : 869,
+          "questions" : [
+
+          ]
+        },
+        {
+          "id" : 1747,
+          "title" : "Good",
+          "nas_class" : "c1",
+          "question" : 869,
+          "questions" : [
+
+          ]
+        },
+        {
+          "id" : 1748,
+          "title" : "Excellent",
+          "nas_class" : "c1",
+          "question" : 869,
+          "questions" : [
+
+          ]
+        }
+      ],
+      "description" : "",
+      "type" : "single_select",
+      "creator" : 5
+    }
+  ],
+  "msg" : "Success"
+}

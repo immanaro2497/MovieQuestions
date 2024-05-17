@@ -1,24 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MovieQuestions" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sh-4r-JIk">
+                                <rect key="frame" x="309" y="733" width="60" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next"/>
+                                <connections>
+                                    <action selector="tappedNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="toI-o8-rL4"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VHw-Mq-yMF">
+                                <rect key="frame" x="0.0" y="59" width="393" height="642"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9S2-D4-dAJ">
+                                <rect key="frame" x="24" y="733" width="90" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Previous"/>
+                                <connections>
+                                    <action selector="tappedPreviousButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UJv-lp-kW0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Sh-4r-JIk" firstAttribute="top" secondItem="VHw-Mq-yMF" secondAttribute="bottom" constant="32" id="6cp-qd-Scg"/>
+                            <constraint firstItem="9S2-D4-dAJ" firstAttribute="top" secondItem="VHw-Mq-yMF" secondAttribute="bottom" constant="32" id="7gD-aP-hfY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9S2-D4-dAJ" secondAttribute="bottom" constant="50" id="GgE-RX-zUk"/>
+                            <constraint firstItem="VHw-Mq-yMF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="K9K-b6-ofA"/>
+                            <constraint firstItem="6Sh-4r-JIk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9S2-D4-dAJ" secondAttribute="trailing" constant="195" id="LAp-CJ-xuK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Sh-4r-JIk" secondAttribute="bottom" constant="50" id="LNz-qv-jdl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VHw-Mq-yMF" secondAttribute="trailing" id="mvW-Wc-546"/>
+                            <constraint firstItem="9S2-D4-dAJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="t4i-iL-ba2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Sh-4r-JIk" secondAttribute="trailing" constant="24" id="xHi-ol-Weh"/>
+                            <constraint firstItem="VHw-Mq-yMF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ySa-Bw-I2N"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="6Sh-4r-JIk" id="FTd-Ck-N7N"/>
+                        <outlet property="previousButton" destination="9S2-D4-dAJ" id="kkF-IZ-gBA"/>
+                        <outlet property="tableView" destination="VHw-Mq-yMF" id="3hC-fJ-zoQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="81.679389312977094" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
